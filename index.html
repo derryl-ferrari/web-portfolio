@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derryl Ferrari Ziyadin Boer | Portofolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Config untuk Warna Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a', /* Slate 900 */
+                        gold: '#f59e0b', /* Amber 500 */
+                        goldhover: '#d97706', /* Amber 600 */
+                        offwhite: '#f8fafc', /* Slate 50 */
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-offwhite text-navy font-sans antialiased">
+
+    <!-- Navigation Bar (Sticky) -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-navy tracking-tighter">DERRYL<span class="text-gold">.</span></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gold font-medium transition">Tentang</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-gold font-medium transition">Portofolio</a>
+                    <a href="#experience" class="text-gray-600 hover:text-gold font-medium transition">Pengalaman</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gold font-medium transition">Keahlian</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gold font-medium transition">Kontak</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-navy hover:text-gold focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#about" class="block py-3 px-4 text-sm font-medium hover:bg-gray-50 hover:text-gold">Tentang</a>
+            <a href="#portfolio" class="block py-3 px-4 text-sm font-medium hover:bg-gray-50 hover:text-gold">Portofolio</a>
+            <a href="#experience" class="block py-3 px-4 text-sm font-medium hover:bg-gray-50 hover:text-gold">Pengalaman</a>
+            <a href="#skills" class="block py-3 px-4 text-sm font-medium hover:bg-gray-50 hover:text-gold">Keahlian</a>
+            <a href="#contact" class="block py-3 px-4 text-sm font-medium hover:bg-gray-50 hover:text-gold">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-gold font-semibold tracking-wider uppercase mb-4">Video Editor & Content Clipper</h2>
+            <h1 class="text-4xl md:text-6xl font-bold text-navy mb-6 leading-tight">
+                Eksekusi Cepat.<br> 
+                <span class="text-gold">Hook Memikat.</span><br> 
+                Konversi Maksimal.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                Spesialis produksi konten video pendek yang berkonversi tinggi untuk TikTok Shop, Shopee Video, dan Media Sosial Anda.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <a href="#portfolio" class="bg-navy text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition transform hover:scale-105 shadow-lg">Lihat Portofolio</a>
+                <a href="#contact" class="bg-gold text-navy px-8 py-3 rounded-full font-semibold hover:bg-goldhover transition transform hover:scale-105 shadow-lg">Hubungi Saya</a>
+            </div>
+
+            <!-- Social Links Quick Access -->
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="https://www.youtube.com/@dinboerr" target="_blank" class="text-gray-500 hover:text-red-600 text-3xl transition transform hover:scale-110" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@dinboer_" target="_blank" class="text-gray-500 hover:text-black text-3xl transition transform hover:scale-110" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section with Profile Picture -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy inline-block relative">
+                    Tentang Saya
+                    <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gold rounded"></span>
+                </h2>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-offwhite rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+                <!-- Foto Profil -->
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gold rounded-2xl transform translate-x-3 translate-y-3"></div>
+                        <img src="pp1.png" alt="Derryl Ferrari Ziyadin Boer" class="relative rounded-2xl shadow-lg border-4 border-white w-64 h-64 md:w-72 md:h-72 object-cover">
+                    </div>
+                </div>
+                
+                <!-- Teks Deskripsi -->
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Saya adalah <strong>Video Editor dan Content Clipper</strong> yang mengutamakan efisiensi dan keakuratan fakta, berfokus pada produksi konten video pendek yang cepat dan berkonversi tinggi untuk <strong>TikTok Shop dan Shopee Video</strong>. 
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-lg mt-4">
+                        Memiliki rekam jejak dalam mengeksekusi produksi video jarak jauh (remote) secara mandiri, menciptakan hook yang menarik, dan memanfaatkan alat AI untuk menghasilkan aset yang langsung bisa dieksekusi. Berhasil membangun audiens gabungan lebih dari <strong>4.200 pengikut di YouTube, Instagram, dan TikTok</strong>. Siap memberikan kontribusi langsung sebagai freelancer jarak jauh dengan memanfaatkan keahlian tingkat lanjut dalam CapCut, desain grafis, dan tren video e-commerce.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio & Projects -->
+    <section id="portfolio" class="py-20 bg-offwhite">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy inline-block relative mb-4">
+                    Karya & Portofolio
+                    <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gold rounded"></span>
+                </h2>
+                <p class="text-gray-600">Hasil editing, kliping konten, dan adaptasi video.</p>
+            </div>
+
+            <!-- Banner YouTube Channel -->
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-xl border-4 border-navy">
+                <img src="{EBEE1421-C8D4-4F1C-A95F-6939D0D380DF}.jpg" alt="Dinboer YouTube Banner" class="w-full h-auto object-cover">
+            </div>
+
+            <h3 class="text-2xl font-bold text-navy mb-6"><i class="fab fa-youtube text-red-600 mr-2"></i>Video Editing (Music & Game Adaptation)</h3>
+            
+            <!-- Grid YouTube Embeds -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <!-- Video 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition hover:scale-105">
+                    <div class="relative pb-[56.25%] h-0">
+                        <iframe src="https://www.youtube.com/embed/gUqZzS0Rsfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-navy text-sm">Adaptasi Video Game & Musik #1</h4>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition hover:scale-105">
+                    <div class="relative pb-[56.25%] h-0">
+                        <iframe src="https://www.youtube.com/embed/9tOAzqjF1bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-navy text-sm">Adaptasi Video Game & Musik #2</h4>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition hover:scale-105">
+                    <div class="relative pb-[56.25%] h-0">
+                        <iframe src="https://www.youtube.com/embed/2HlipTSaBg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-navy text-sm">Adaptasi Video Game & Musik #3</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Vertikal (TikTok/Reels Style) -->
+            <div class="mt-12 bg-navy rounded-3xl p-8 md:p-10 text-white flex flex-col md:flex-row items-center gap-10 shadow-2xl">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="rounded-xl overflow-hidden shadow-2xl border-2 border-gold max-w-[280px]">
+                        <video controls class="w-full h-auto bg-black">
+                            <source src="bray1.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h3 class="text-3xl font-bold text-gold mb-4"><i class="fab fa-tiktok mr-2"></i>Short Video Production</h3>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        Contoh gaya pengeditan untuk konten vertikal seperti vlog sinematik, promosi kafe (Bray Koffie), dan konten <i>romanticizing</i> lokasi. Menggunakan transisi dinamis, penyesuaian warna, dan audio yang selaras dengan tren algoritma saat ini guna memaksimalkan retensi audiens.
+                    </p>
+                    <a href="https://www.tiktok.com/@dinboer_" target="_blank" class="inline-flex items-center gap-2 bg-white text-navy px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition transform hover:scale-105">
+                        <i class="fab fa-tiktok"></i> Lihat TikTok Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy inline-block relative">
+                    Pengalaman Profesional
+                    <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gold rounded"></span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Experience 1 -->
+                <div class="bg-offwhite rounded-xl p-6 border-l-4 border-gold shadow-sm hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy">Independent Content Creator & Video Editor</h3>
+                            <p class="text-gray-500 font-medium">Freelance / Remote</p>
+                        </div>
+                        <div class="text-gold font-bold mt-2 md:mt-0">2024 - Saat Ini</div>
+                    </div>
+                    <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                        <li>Meningkatkan audiens lintas platform menjadi lebih dari 4.200 pengikut dengan mengonsep, mengedit, dan memublikasikan konten video pendek berbasis tren.</li>
+                        <li>Memproduksi video pendek dengan tingkat retensi tinggi untuk TikTok dan Reels menggunakan CapCut untuk <i>clipping</i> presisi, transisi dinamis, dan subtitle otomatis.</li>
+                        <li>Mempercepat alur kerja produksi konten jarak jauh dengan efisiensi tinggi melalui integrasi alat AI (Google Gemini, ChatGPT) dan Canva.</li>
+                        <li>Mengoptimalkan penemuan konten dengan meriset tren platform terkini serta menulis caption berbasis SEO dan <i>copywriting</i> promosi produk.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-offwhite rounded-xl p-6 border-l-4 border-navy shadow-sm hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy">Owner & Digital Promotions Lead</h3>
+                            <p class="text-gray-500 font-medium">Bray Koffie | Jatinangor, Jawa Barat</p>
+                        </div>
+                        <div class="text-gold font-bold mt-2 md:mt-0">2023 - 2024</div>
+                    </div>
+                    <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                        <li>Menghasilkan puncak pendapatan penjualan harian sekitar Rp 5.000.000 selama acara orientasi universitas melalui peluncuran materi kampanye digital tertarget.</li>
+                        <li>Meningkatkan kehadiran online dan identitas visual merek dengan memproduksi aset promosi digital dan desain grafis secara mandiri menggunakan Canva.</li>
+                        <li>Memastikan efisiensi operasional dan keakuratan fakta dalam pencatatan keuangan dan koordinasi pemasok.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-offwhite rounded-xl p-6 border-l-4 border-gray-400 shadow-sm hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy">Operations & Promotions Support</h3>
+                            <p class="text-gray-500 font-medium">Kopi Santuy | Bandung, Jawa Barat</p>
+                        </div>
+                        <div class="text-gold font-bold mt-2 md:mt-0">2021 - 2022</div>
+                    </div>
+                    <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                        <li>Mendukung inisiatif pemasaran online lokal dengan membuat desain promosi dan konten visual yang diadaptasi efisien untuk pembaruan media sosial.</li>
+                        <li>Mempertahankan akurasi pesanan 100% saat memproses 50-100 pesanan per shift dalam lingkungan bertempo tinggi.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills -->
+    <section id="skills" class="py-20 bg-navy text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold inline-block relative">
+                    Keahlian
+                    <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gold rounded"></span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Hard Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gold"><i class="fas fa-laptop-code mr-2"></i>Hard Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">CapCut Pro</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">E-commerce Content Clipping</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">Video Hook Creation</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">Pengeditan Video Pendek</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">Subtitle & Captioning</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">AI Image Generation & Prompting</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">Desain Grafis (Canva)</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">Copywriting (SEO & Produk)</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-gold hover:text-navy hover:border-gold transition cursor-default">Analitik Media Sosial</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gold"><i class="fas fa-users mr-2"></i>Soft Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Efisiensi Kerja Remote</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Keakuratan Fakta</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Eksekusi Mandiri</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Pemecahan Masalah Cepat</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Trend Awareness</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Perhatian terhadap Detail</span>
+                        <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-navy hover:border-white transition cursor-default">Manajemen Waktu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-offwhite">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl font-bold text-navy mb-6">Mari Bekerja Sama!</h2>
+            <p class="text-gray-600 mb-10 text-lg">Siap memberikan kontribusi maksimal untuk proyek konten video Anda. Hubungi saya melalui salah satu platform di bawah ini.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <!-- Email -->
+                <a href="mailto:derrylferrariziyadin@gmail.com" class="flex items-center justify-center gap-3 bg-white px-8 py-4 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition text-navy font-semibold">
+                    <i class="fas fa-envelope text-xl text-gold"></i>
+                    Email Saya
+                </a>
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6287874708639" target="_blank" class="flex items-center justify-center gap-3 bg-white px-8 py-4 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition text-navy font-semibold">
+                    <i class="fab fa-whatsapp text-xl text-green-500"></i>
+                    WhatsApp
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/derryl-ferrari-ziyadin-boer-885809246" target="_blank" class="flex items-center justify-center gap-3 bg-white px-8 py-4 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition text-navy font-semibold">
+                    <i class="fab fa-linkedin text-xl text-blue-600"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-6 text-center">
+        <p class="text-gray-400 text-sm">© 2026 Derryl Ferrari Ziyadin Boer. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
